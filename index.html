@@ -40,7 +40,7 @@
 
 <main id="top">
   <div class="opener">
-    <video id="opener-video" autoplay muted loop playsinline preload="auto" poster="img/intro_poster.jpg" src="img/intro_loop.mp4" aria-label="Ελαιώνας στην Ελλάδα: ένα χέρι σχεδιάζει τον ναό του σήματος, που γίνεται η αρχική σελίδα του IKTINOS"></video>
+    <video id="opener-video" autoplay muted playsinline preload="auto" poster="img/intro_poster.jpg" src="img/intro_loop.mp4" aria-label="Ελαιώνας στην Ελλάδα: ένα χέρι σχεδιάζει τον ναό του σήματος, που γίνεται η αρχική σελίδα του IKTINOS"></video>
     <div class="over"><div class="wrap"><p>Μια γραμμή σε έναν ελαιώνα. Ένα κτίριο, ως τον τελευταίο σωλήνα.</p><span class="t">ΑΠΟ ΤΟ ΒΙΝΤΕΟ ΤΟΥ IKTINOS · ΠΑΞΟΙ, CC0</span></div></div>
   </div>
   <section class="hero">
@@ -168,7 +168,7 @@
 
 <script>
 (function(){
-  // Opening film at half speed (owner 22/11: «πάει πολύ γρήγορα» → «στο μισό»).
+  // Opening film at half speed, played once and held on its last frame, the IKTINOS start page (owner 22/11: «στο μισό»; «μετά που εμφανίζει την αρχική ξαναπαίζει»).
   var ov=document.getElementById("opener-video");
   if(ov){var slow=function(){ov.defaultPlaybackRate=0.5;ov.playbackRate=0.5;};slow();ov.addEventListener("loadedmetadata",slow);ov.addEventListener("play",slow);}
   var P={
