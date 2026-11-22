@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>IKTINOS · Architecture, structure and MEP in one model</title>
+<meta name="description" content="IKTINOS keeps one model for the whole building: plan, 3D, structure to EN 1998-1, MEP, energy and the construction site. Development release.">
+<link rel="canonical" href="https://iktinos.eu/en/">
+<link rel="alternate" hreflang="el" href="https://iktinos.eu/">
+<link rel="alternate" hreflang="en" href="https://iktinos.eu/en/">
+<link rel="alternate" hreflang="x-default" href="https://iktinos.eu/en/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://iktinos.eu/en/">
+<meta property="og:title" content="IKTINOS">
+<meta property="og:description" content="From floor plan to formwork, to the networks and to the site. One model for the whole building.">
+<meta property="og:image" content="https://iktinos.eu/img/intro_poster.jpg">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="el_GR">
+<meta name="theme-color" content="#0a1220">
+<link rel="icon" type="image/png" href="../img/mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="../img/mark.png" alt=""><b>IKTINOS</b></a>
+    <span class="chip">DEVELOPMENT RELEASE</span>
+    <nav class="main" aria-label="Main menu"><a href="#projects">Projects</a><a href="#modules">Modules</a><a href="#checks">Checks</a><a href="#video">Video</a><a href="#site">IKTINOS SITE</a></nav>
+    <div class="lang" aria-label="Language"><a href="../" hreflang="el" lang="el">ΕΛ</a><span aria-current="true">EN</span></div>
+    <a class="btn primary" href="#beta">Trial access</a>
+  </div>
+</header>
+<div class="strip"><div class="wrap">
+  <span>MODEL: <b>ONE</b> · 2D ↔ 3D</span><span>EN 1998-1 + GREEK NATIONAL ANNEX</span><span>TOTEE 20701</span><span>IFC4 · DXF · PDF</span><span>TESTS: <b>3,800+</b> AUTOMATED</span>
+</div></div>
+
+<main id="top">
+  <div class="opener">
+    <video autoplay muted loop playsinline preload="auto" poster="../img/intro_poster.jpg" src="../img/intro_loop.mp4" aria-label="An olive grove in Greece: a hand draws the temple of the logo, which becomes the IKTINOS start page"></video>
+    <div class="over"><div class="wrap"><p>One line in an olive grove. One building, down to the last pipe.</p><span class="t">FROM THE IKTINOS FILM · PAXOS, CC0</span></div></div>
+  </div>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="label">Architecture · Structure · MEP · Energy · Site</span>
+        <h1>From the floor plan to the <span class="hl">formwork</span>, the networks and the site.</h1>
+        <p class="lede">IKTINOS keeps one model for the whole building. The plan, the 3D view, the structure to Eurocode 8, the MEP networks and the energy check all read the same drawing, and every change can be undone.</p>
+        <div class="pills"><span>2D ↔ 3D</span><span>Clash detection</span><span>ΣMRc ≥ 1.30 ΣMRb</span><span>KENAK</span><span>Geodesic domes</span></div>
+        <div class="ctas"><a class="btn primary" href="#beta">Request trial access</a><a class="btn ghost" href="#video">Watch the video</a></div>
+      </div>
+
+      <div class="vp" id="projects">
+        <div class="vp-head">
+          <div class="tabs" role="group" aria-label="Project">
+            <button type="button" id="t-villa" aria-pressed="true" data-p="villa">S12 · Villa</button>
+            <button type="button" id="t-dome" aria-pressed="false" data-p="dome">S13 · Dome</button>
+            <button type="button" id="t-off" aria-pressed="false" data-p="off">S14 · Offices</button>
+          </div>
+          <div class="views" role="group" aria-label="View" id="views"></div>
+        </div>
+        <div class="vp-body">
+          <img id="vp-img" src="../img/villa.webp" alt="" width="1600" height="1000">
+          <span class="scale" id="vp-scale">3D · IKTINOS</span>
+          <span class="coords" id="vp-cap"></span>
+        </div>
+        <div class="insp" id="insp"></div>
+        <div class="vp-note">Every image and value comes from the S12–S14 models, which open from “Open sample”. The screenshots show the Greek interface.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="modules" style="padding-top:20px">
+    <div class="wrap">
+      <div class="head">
+        <span class="label">Modules</span>
+        <h2>Six disciplines on one model</h2>
+        <p>Architecture, structure and MEP do not live in three programs that have to agree. Change a wall and the plan, the 3D view, the structure, the networks and the quantities all update.</p>
+      </div>
+      <div class="mods">
+        <article class="mod"><span class="ic">2D</span><h3>Drawing and BIM</h3><p>Layered walls, doors and windows, slabs, roofs, stairs, storeys. Plans, sections, elevations, A4–A0 sheets.</p><div class="tags"><span>IFC4</span><span>DXF</span><span>PDF</span></div></article>
+        <article class="mod"><span class="ic">EC8</span><h3>Structure and formwork</h3><p>3D frame, seismic design to EN 1998-1 with the Greek National Annex, column and beam reinforcement, foundations, capacity check of joints.</p><div class="tags"><span>EN 1998-1</span><span>RC / STEEL</span></div></article>
+        <article class="mod"><span class="ic">MEP</span><h3>Networks</h3><p>Water supply, drainage, electrical, low voltage / KNX, heating, ventilation, pools to HD 60364-7-702, with routing and take-off.</p><div class="tags"><span>ROUTING</span><span>TAKE-OFF</span></div></article>
+        <article class="mod"><span class="ic">kWh</span><h3>Energy</h3><p>U-values from the layers, TOTEE 20701 tables, thermal bridges, thermal image of the facades, sun hours and shading per window.</p><div class="tags"><span>TOTEE 20701</span><span>KENAK</span></div></article>
+        <article class="mod"><span class="ic">V4</span><h3>Domes, pergolas, louvres</h3><p>Geodesic V1–V8 frame on a dome, glass shell, pergolas with movable louvres, photovoltaics in the Library.</p><div class="tags"><span>GEODESIC</span><span>LOUVRES</span></div></article>
+        <article class="mod"><span class="ic">AI</span><h3>Assistant</h3><p>“Complete building” with a single undo. The Assistant also works without AI, using local rules; connect an AI app in one click.</p><div class="tags"><span>NO AI NEEDED</span><span>MCP</span></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="checks" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <span class="label">Quality gate</span>
+        <h2>The same check on every project</h2>
+        <p>IKTINOS checks every project with the same rules and shows the problem on the plan. The values are after the “Analyse structure” command.</p>
+      </div>
+      <div class="tablewrap"><table class="checks">
+        <thead><tr><th>Check</th><th>S12 villa</th><th>S13 dome</th><th>S14 offices</th></tr></thead>
+        <tbody>
+          <tr><td>Joints ΣMRc / ΣMRb ≥ 1.30, including the top storey</td><td class="n ok">51 / 51 · min. 1.33</td><td class="n ok">66 / 66 · min. 1.30</td><td class="n ok">32 / 32 · min. 1.31</td></tr>
+          <tr><td>Water supply: cold and hot in one network</td><td class="n ok">yes</td><td class="n ok">yes</td><td class="n ok">yes</td></tr>
+          <tr><td>Save → close → reopen without loss</td><td class="n ok">yes</td><td class="n ok">yes</td><td class="n ok">yes</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </section>
+
+  <section class="film" id="video" style="padding-top:0">
+    <div class="wrap grid">
+      <video controls playsinline preload="metadata" poster="../img/poster.jpg" src="../img/iktinos_promo.mp4" aria-label="IKTINOS showcase video"></video>
+      <div style="display:grid;gap:14px">
+        <span class="label">Video · 86 s</span>
+        <h2>From one line in an olive grove to the building and its networks</h2>
+        <ol><li>A hand draws the temple of the logo.</li><li>Drawing in the real program window; the Assistant completes the building.</li><li>Villa, centre with dome, offices.</li><li>IKTINOS SITE on the phone.</li></ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="site" style="padding-top:0">
+    <div class="wrap site-grid">
+      <div style="display:grid;gap:16px">
+        <span class="label">IKTINOS SITE · Android</span>
+        <h2>The project on site, on your phone</h2>
+        <p>The IKTINOS construction-site app. The office sends the building read-only; the phone never changes the design, it sends observations.</p>
+        <div class="feat">
+          <div><b>01</b><span>Pair with the office by QR, one key per device, over the office WiFi.</span></div>
+          <div><b>02</b><span>Plan and 3D with your fingers, storey by storey.</span></div>
+          <div><b>03</b><span>Pins on the model with text, voice, photo and thermography from file.</span></div>
+          <div><b>04</b><span>Observations arrive in IKTINOS at the office (“Messages from the site”).</span></div>
+        </div>
+      </div>
+      <div class="phones">
+        <div class="phone"><img src="../img/site_1.webp" alt="IKTINOS SITE: floor plan" loading="lazy"></div>
+        <div class="phone"><img src="../img/site_2.webp" alt="IKTINOS SITE: pin card" loading="lazy"></div>
+        <div class="phone"><img src="../img/site_3.webp" alt="IKTINOS SITE: 3D" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="beta" style="padding-top:0">
+    <div class="wrap beta">
+      <div style="display:grid;gap:16px">
+        <span class="label">Trial programme</span>
+        <h2>Designed in Greece, for European projects</h2>
+        <p>The trial release is the current development release. Use it alongside the software you already have and check every result before you submit it.</p>
+        <ul><li>Interface in English and Greek.</li><li>14 sample projects, or your own drawings in PDF / DXF.</li><li>Windows for the office, Android for the site.</li></ul>
+      </div>
+      <form id="beta-form" novalidate>
+        <label for="f-name">Full name<input id="f-name" autocomplete="name"></label>
+        <label for="f-mail">Email<input id="f-mail" type="email" autocomplete="email"></label>
+        <label for="f-role">Profession<select id="f-role"><option>Architect</option><option>Civil / structural engineer</option><option>Mechanical / electrical engineer</option><option>Design office / contractor</option><option>Student / researcher</option></select></label>
+        <button class="btn primary" type="submit" id="f-send">Request access</button>
+        <p class="msg" id="f-note">Requests are sent by email to <a href="mailto:info@iktinos.eu">info@iktinos.eu</a>; the button opens your email program with a ready message.</p>
+        <div class="msg" id="f-msg" role="status" hidden></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  <a class="brand" href="#top"><img src="../img/mark.png" alt=""><b>IKTINOS</b></a>
+  <span><a href="mailto:info@iktinos.eu">info@iktinos.eu</a> · Images from IKTINOS, projects S12–S14 · olive grove in the video: Paxos, Wikimedia Commons, CC0.</span>
+</div></footer>
+
+<script>
+(function(){
+  var P={
+    villa:{views:[["3D","../img/villa.webp","Bioclimatic villa · 3D"],["Plan","../img/villa_plan.webp","Ground floor plan"],["MEP","../img/villa_mep.webp","MEP in 3D"]],
+      insp:[["14 × 10 m","Dimensions"],["2 + roof terrace","Storeys"],["stone / render","Facades"],["8 + 1","PV panels + solar water heater"],["U stair, 19 risers","Circulation"],["1.33","min. ΣMRc/ΣMRb","ok"]]},
+    dome:{views:[["3D","../img/dome.webp","Centre with dome · 3D"],["Dome","../img/geodesic.webp","Geodesic frame V4"]],
+      insp:[["Ø12 × 6.20 m","Dome"],["V4 · 12 cm","Frame"],["16 × 9 m","Wing"],["12","PV panels"],["stone / concrete","Facades"],["1.30","min. ΣMRc/ΣMRb","ok"]]},
+    off:{views:[["3D","../img/offices.webp","Offices · 3D"],["Structure","../img/frame.webp","Structural frame"],["Formwork","../img/formwork.webp","Ground floor formwork"]],
+      insp:[["18 × 12 m","Dimensions"],["2","Storeys"],["18","Workstations"],["2 pergolas","Movable louvres"],["EN 1998-1","Seismic"],["1.31","min. ΣMRc/ΣMRb","ok"]]}
+  };
+  var img=document.getElementById("vp-img"),cap=document.getElementById("vp-cap"),views=document.getElementById("views"),insp=document.getElementById("insp");
+  function view(p,i){var v=P[p].views[i];img.src=v[1];img.alt=v[2];cap.textContent=v[2];
+    Array.prototype.forEach.call(views.children,function(b,j){b.setAttribute("aria-pressed",String(i===j))});}
+  function project(p){
+    document.querySelectorAll(".tabs button").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.p===p))});
+    views.innerHTML="";P[p].views.forEach(function(v,i){var b=document.createElement("button");b.type="button";b.id="v-"+p+"-"+i;b.textContent=v[0];b.addEventListener("click",function(){view(p,i)});views.appendChild(b);});
+    insp.innerHTML="";P[p].insp.forEach(function(r){var d=document.createElement("div");d.innerHTML='<span class="v'+(r[2]?" ok":"")+'"></span><span class="k"></span>';d.firstChild.textContent=r[0];d.lastChild.textContent=r[1];insp.appendChild(d);});
+    view(p,0);
+  }
+  document.querySelectorAll(".tabs button").forEach(function(b){b.addEventListener("click",function(){project(b.dataset.p)})});
+  project("villa");
+  var T={"subj": "IKTINOS trial access request", "L": ["Name", "Email", "Profession"], "need": "Please enter your name and a valid email.", "sent": "Your email program opened with a ready message; press “Send” there. If it did not open, write to <a href=\"mailto:info@iktinos.eu\">info@iktinos.eu</a>."};
+  document.getElementById("beta-form").addEventListener("submit",function(e){e.preventDefault();
+    var n=document.getElementById("f-name").value.trim(),m=document.getElementById("f-mail").value.trim(),r=document.getElementById("f-role").value,o=document.getElementById("f-msg");
+    o.hidden=false;if(!n||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m)){o.textContent=T.need;return;}
+    var body=T.L[0]+": "+n+"\n"+T.L[1]+": "+m+"\n"+T.L[2]+": "+r+"\n";
+    location.href="mailto:info@iktinos.eu?subject="+encodeURIComponent(T.subj)+"&body="+encodeURIComponent(body);
+    o.innerHTML=T.sent;});
+})();
+</script>
+</body>
+</html>
