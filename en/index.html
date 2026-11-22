@@ -39,7 +39,7 @@
 
 <main id="top">
   <div class="opener">
-    <video autoplay muted loop playsinline preload="auto" poster="../img/intro_poster.jpg" src="../img/intro_loop.mp4" aria-label="An olive grove in Greece: a hand draws the temple of the logo, which becomes the IKTINOS start page"></video>
+    <video id="opener-video" autoplay muted loop playsinline preload="auto" poster="../img/intro_poster.jpg" src="../img/intro_loop.mp4" aria-label="An olive grove in Greece: a hand draws the temple of the logo, which becomes the IKTINOS start page"></video>
     <div class="over"><div class="wrap"><p>One line in an olive grove. One building, down to the last pipe.</p><span class="t">FROM THE IKTINOS FILM · PAXOS, CC0</span></div></div>
   </div>
   <section class="hero">
@@ -167,6 +167,9 @@
 
 <script>
 (function(){
+  // Opening film at half speed (owner 22/11: «πάει πολύ γρήγορα» → «στο μισό»).
+  var ov=document.getElementById("opener-video");
+  if(ov){var slow=function(){ov.defaultPlaybackRate=0.5;ov.playbackRate=0.5;};slow();ov.addEventListener("loadedmetadata",slow);ov.addEventListener("play",slow);}
   var P={
     villa:{views:[["3D","../img/villa.webp","Bioclimatic villa · 3D"],["Plan","../img/villa_plan.webp","Ground floor plan"],["MEP","../img/villa_mep.webp","MEP in 3D"]],
       insp:[["14 × 10 m","Dimensions"],["2 + roof terrace","Storeys"],["stone / render","Facades"],["8 + 1","PV panels + solar water heater"],["U stair, 19 risers","Circulation"],["1.33","min. ΣMRc/ΣMRb","ok"]]},

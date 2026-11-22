@@ -40,7 +40,7 @@
 
 <main id="top">
   <div class="opener">
-    <video autoplay muted loop playsinline preload="auto" poster="img/intro_poster.jpg" src="img/intro_loop.mp4" aria-label="Ελαιώνας στην Ελλάδα: ένα χέρι σχεδιάζει τον ναό του σήματος, που γίνεται η αρχική σελίδα του IKTINOS"></video>
+    <video id="opener-video" autoplay muted loop playsinline preload="auto" poster="img/intro_poster.jpg" src="img/intro_loop.mp4" aria-label="Ελαιώνας στην Ελλάδα: ένα χέρι σχεδιάζει τον ναό του σήματος, που γίνεται η αρχική σελίδα του IKTINOS"></video>
     <div class="over"><div class="wrap"><p>Μια γραμμή σε έναν ελαιώνα. Ένα κτίριο, ως τον τελευταίο σωλήνα.</p><span class="t">ΑΠΟ ΤΟ ΒΙΝΤΕΟ ΤΟΥ IKTINOS · ΠΑΞΟΙ, CC0</span></div></div>
   </div>
   <section class="hero">
@@ -168,6 +168,9 @@
 
 <script>
 (function(){
+  // Opening film at half speed (owner 22/11: «πάει πολύ γρήγορα» → «στο μισό»).
+  var ov=document.getElementById("opener-video");
+  if(ov){var slow=function(){ov.defaultPlaybackRate=0.5;ov.playbackRate=0.5;};slow();ov.addEventListener("loadedmetadata",slow);ov.addEventListener("play",slow);}
   var P={
     villa:{views:[["3D","img/villa.webp","Βιοκλιματική βίλα · 3D"],["Κάτοψη","img/villa_plan.webp","Κάτοψη ισογείου"],["Η/Μ","img/villa_mep.webp","Η/Μ στο 3D"]],
       insp:[["14 × 10 m","Διαστάσεις"],["2 + δώμα","Όροφοι"],["πέτρα / σοβάς","Όψεις"],["8 + 1","Φ/Β πάνελ + θερμοσίφωνας"],["σκάλα U, 19 ρίχτια","Κυκλοφορία"],["1,33","ελάχ. ΣMRc/ΣMRb","ok"]]},
