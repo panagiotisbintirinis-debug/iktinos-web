@@ -136,3 +136,13 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;
 @media (max-width:560px){header.top .wrap{gap:10px}.brand b{letter-spacing:.22em}header.top .btn{padding:8px 12px;font-size:.84rem;white-space:nowrap}.lang a,.lang span{padding:4px 6px}}
 @media (max-width:480px){.brand b{display:none}}
 .brand{flex-shrink:0}
+
+/* Στατικά · Εργολάβος (24/11): two screenshots side by side, one column on a phone */
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.shots figure{margin:0;border:1px solid var(--line);border-radius:10px;background:var(--panel);overflow:hidden}
+.shots img{display:block;width:100%;height:auto}
+.shots figcaption{padding:10px 14px;font-size:.86rem;color:var(--ink-2)}
+.fine{margin-top:12px;font-size:.8rem;color:var(--ink-3)}
+@media (max-width:820px){.shots{grid-template-columns:1fr}}
+/* Phone (375 px): the trial form fields were 1 px wider than the screen */
+#beta-form,#beta-form label,#beta-form input,#beta-form select,#beta-form button,#beta-form .msg{max-width:100%;box-sizing:border-box;min-width:0}
